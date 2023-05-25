@@ -1,0 +1,309 @@
+/* pemanggilan class di css menggunakan titik  */
+/* .first{
+    background-color: aqua;
+} */
+
+/* .second{
+    background-color: red;
+} */
+
+/* pemanggilan id di css menggunakan pagar/hastag # */
+/* #third{
+    background-color: green;
+} */
+/* menghilangkan margin dan padding default html */
+*,html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive; /*font*/
+    scroll-behavior: smooth;
+}
+
+/* membuat variabel dalam css */
+:root {
+    --bg-primary: #2455f5;
+    --bg-secondary: rgb(247, 255, 255);
+    --txt-primary: white;
+    --txt-secondary: black;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: grey;
+}
+
+header{
+    background-color: tomato;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.logo:hover{
+    color: var(--bg-primary);
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+a{
+    color: #eee;
+    text-decoration: none;
+}
+li a{
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+li a:hover{
+    color: var(--bg-primary);
+    transform: rotate(2deg);
+}
+.container{
+    width: 100%;
+    height: auto; 
+    min-height: 100vh; /* vh (vertical height itu menyesuaikan dengan layar device*/
+    padding: 70px 0;
+}
+.container-outro{
+    width: 100%;
+    height: auto; 
+    min-height: 100vh; /* vh (vertical height itu menyesuaikan dengan layar device*/
+     background-color: var(--bg-primary); 
+    padding: 70px 0;
+}
+.container-intro{
+    width: 100%;
+    height: auto;  
+    padding: 70px 0;
+}
+
+.wrapper{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.cards-item{
+    text-align: center;
+    width: 30%;
+    background-color: #eee;
+    color: #222;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.text-center{
+    text-align: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column; /*agar tidak menjajar ke kanan */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.title{
+    font-size: 2em; /* em adalah berapa x nya pixel */
+    font-weight: bold;
+}
+
+.description{
+    margin-top: 8px;
+    font-size: .9em;
+}
+
+.foto{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax{
+    background-image: url('assets/img/anjay.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: tomato;
+    color: #eee;
+    padding: 40px;
+}
+
+.mt-10{
+    margin-top: 20px;
+}
+
+.icons{
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icons-bg-primary);
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.cards-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.btn{
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn-cta{
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    font-size: 20px;
+    background: var(--bg-primary);
+    color: var(--txt-primary);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}
+
+.calendar{
+    width: 456px;
+    height: 400px;
+}
+
+.container2{
+    display: none;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background: tomato;
+    color: #eee;
+}
+
+
+/* responsive */
+/* kalo pixel 500 keatas akan berubah warna */
+/* @media screen and (min-width: 500px){ 
+    .container{
+        background-color: tomato;
+    }
+} */
+
+/* kalo resolusi dibawah 476px card akan melebar */
+@media screen and (max-width:652px){
+    .card{
+        width: 95%;
+    }
+    .title{
+        font-size: 3em;
+    }
+    .description{
+        font-size: 2em;
+    }
+    .btn{
+        padding: 16px;
+        font-size: 2em;
+    }
+    .calendar{
+        width: 100%;
+        max-width: 476px;
+        height: 400px;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    .cards-item{
+        width: 100%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    .about{
+        text-align: center;
+    }
+    .container-intro{
+        padding:0%;
+    }
+    header{
+        position: absolute;
+    }
+    .intro{
+        margin-top: 0;
+    }
+    .title{
+        margin-top: 50px;
+    }
+    nav{
+        position: fixed;
+        bottom:0;
+        width: 100%;
+        background: tomato;
+        z-index: 9;
+    }
+    footer{
+        margin-bottom: 80px;
+    }
+}
+/* kalo resolusi diatas 100px konten container akan hilang dan muncul container2 */
+@media screen and (min-width: 1000px) and (max-width:1300px){
+    .container{
+        display:none;
+    }
+    .container2{
+        display:block;
+    }
+}

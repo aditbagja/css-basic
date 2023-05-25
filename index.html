@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Styling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow</button>
+    </header>
+    <div class="container-intro" id="home">
+        <div class="intro">
+            <p class="title">Halo Adit!</p>
+            <p class="description text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, suscipit!</p>
+            <img src="assets/img/adit.jpg" alt="foto" class="foto">
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="about" id="about">
+            <p class="title">Saya adalah web programmer</p>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, suscipit!</p>
+        <div class="mt-10">
+            <button class="btn-cta" onclick="redirWhatsapp()">Mari Kerjasama</button>
+        </div>
+        </div>
+        <div class="container-intro">
+            <div class="wrapper">
+                <div class="cards">
+                    <div class="cards-item">
+                        <img src="assets/icon/html.png" alt="html" class="icon">
+                        <p class="cards-title">Saya bisa html</p>
+                        <p class="cards-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, suscipit!</p>
+                    </div>
+                    <div class="cards-item">
+                        <img src="assets/icon/laravel.png" alt="laravel" class="icon">
+                        <p class="cards-title">Saya bisa laravel</p>
+                        <p class="cards-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, suscipit!</p>
+                    </div>
+                    <div class="cards-item">
+                        <img src="assets/icon/pc.png" alt="laravel" class="icon">
+                        <p class="cards-title">Saya bisa troubleshooting</p>
+                        <p class="cards-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, suscipit!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-outro">
+        <div class="wrapper">
+            <div class="card text-center">
+                <h1 class="title">MY YOUTUBE</h1>
+                <i class="fa-brands fa-youtube icons"></i>
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <button class="btn">Follow</button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">MY FACEBOOK</h1>
+                <i class="fa-brands fa-facebook icons"></i>
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <button class="btn">Follow</button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">MY TWITTER</h1>
+                <i class="fa-brands fa-twitter icons"></i>
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <button class="btn">Follow</button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">MY GOOGLE</h1>
+                <i class="fa-brands fa-google icons"></i>
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <button class="btn">Follow</button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">CALENDAR</h1>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FJakarta&showTitle=0&showNav=0&showDate=1&showPrint=0&showTabs=1&showTz=1&showCalendars=0&hl=id&src=YWRpdGJhZ2phNDRAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTA3OTg5NDMwNzE5ODY4NjUxNDU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA4MDQxMzE4NTk2NzAzMzI3MzUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZmFtaWx5MTEwNjEzNjk0ODUwNDQwNDg0NjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Y2xhc3Nyb29tMTEwOTcyNzg1NzkwMzA2OTM3MDk5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAyNzY0OTQ1OTAzODE1MTU4Nzg3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=dXBpLmVkdV9jbGFzc3Jvb21iMDEwM2QyN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%23202124&color=%230047a8&color=%230B8043&color=%23795548&color=%23c26401&color=%23202124&color=%23007b83" frameborder="0" scrolling="no" class="calendar"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="card text-center">
+            <h1 class="title">INI ADALAH CONTAINER 2</h1>
+            <p class="description">Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Follow</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy Adit Bagja 2023</p>
+    </footer>
+
+    <script>
+        function redirInstagram(){
+            window.location.href = "https://instagram.com/aditbagja"
+        }
+        function redirWhatsapp(){
+            window.location.href = "https://wa.me/+6285295185905"
+        }
+    </script>
+</body>
+</html>
